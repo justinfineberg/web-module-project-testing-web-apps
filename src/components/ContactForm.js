@@ -67,7 +67,7 @@ const ContactForm = () => {
       [e.target.name]: e.target.value
     });
   }
-
+ 
   return (
     <div className="App">
       <h1>Contact Form</h1>
@@ -121,7 +121,7 @@ const ContactForm = () => {
 
         {displayData && <DisplayComponent form={form}/>}
 
-        <input type="submit" />
+        <input data-testid="submit" type="submit" />
       </form>
     </div>
   );
